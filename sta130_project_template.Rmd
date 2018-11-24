@@ -5,6 +5,8 @@ subtitle: The subtitle of my project
 output:
   ioslides_presentation: default
   widescreen: yes
+editor_options: 
+  chunk_output_type: console
 ---
 
 
@@ -70,6 +72,25 @@ For more on creating an `ioslides` presentation see [https://rmarkdown.rstudio.c
 ## Introduction
 
 Include here a few sentences to introduce the problem and provide context. You might want to briefly summarize the data in words (what is the data and what is it used for). You can present the questions you are investigating here. 
+
+
+
+## Correlation Between Total Population and Internet Users
+```{r, echo=FALSE}
+source('population.R')
+```
+
+
+## Correlation Between GDP and Internet Users
+```{r, echo=FALSE}
+source('gdp.R')
+```
+
+
+## Correlation Between Education and Internet Users
+```{r, echo=FALSE}
+source('education.R')
+```
 
 
 ## Objectives (optional)
