@@ -71,25 +71,30 @@ For more on creating an `ioslides` presentation see [https://rmarkdown.rstudio.c
 
 ## Introduction
 
+```{r, echo=FALSE}
+# Loading all dataframes
+source('scripts/load_data.R')
+```
+
 Include here a few sentences to introduce the problem and provide context. You might want to briefly summarize the data in words (what is the data and what is it used for). You can present the questions you are investigating here. 
 
 
 
 ## Correlation Between Total Population and Internet Users
 ```{r, echo=FALSE}
-source('population.R')
+source('scripts/population.R')
 ```
 
 
 ## Correlation Between GDP and Internet Users
 ```{r, echo=FALSE}
-source('gdp.R')
+source('scripts/gdp.R')
 ```
 
 
 ## Correlation Between Education and Internet Users
 ```{r, echo=FALSE}
-source('education.R')
+source('scripts/education.R')
 ```
 
 
