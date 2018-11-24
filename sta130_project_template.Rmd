@@ -76,6 +76,42 @@ For more on creating an `ioslides` presentation see [https://rmarkdown.rstudio.c
 source('scripts/load_data.R')
 ```
 
+```{r}
+# Drawing map
+world <- map_data("world") 
+
+iu <- internetusers_data %>% rename(region = Country) 
+
+iu$region[4] <- "USA" # to match world map data
+
+iu <- semi_join(iu, world, by = "region") #only keep countries according to world map data
+
+# code below is modified from 
+# https://stackoverflow.com/questions/29614972/ggplot-us-state-map-colors-are-fine-polygons-jagged-r
+gg <- ggplot()
+
+gg <- gg + geom_map(
+  data = world,
+  map = world,
+  aes(x = long, y = lat, map_id = region),
+  fill = "#ffffff",
+  color = "#ffffff",
+  size = 0.20
+)
+
+gg <- gg + geom_map(
+  data = iu,
+  map = world,
+  aes(fill = `INTERNET USERS`, map_id = region),
+  color = "#ffffff",
+  size = 0.15
+)
+
+gg <- gg + scale_fill_continuous(low = 'thistle2', high = 'darkblue',
+                                 guide = 'colorbar')
+gg
+```
+
 Include here a few sentences to introduce the problem and provide context. You might want to briefly summarize the data in words (what is the data and what is it used for). You can present the questions you are investigating here. 
 
 

@@ -1,4 +1,7 @@
 library(tidyverse)
+library(readr)
+library(maps)
+
 
 path <- "https://raw.githubusercontent.com/ntaback/UofT_STA130/master/Fall2018/Finalproject/"
 
