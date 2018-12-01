@@ -147,13 +147,11 @@ source('scripts/education.R')
 ## Correlation Between Demooncracy and Internet Users
 ```{r, echo=FALSE}
 source('scripts/democracy.R')
+
+democracy_internet_joint_graph
 ```
 
 ```{r}
-democracy_internet_joint <- democracy_data %>%
-  inner_join(internetusers_data, by = "Country") %>% 
-  ggplot + aes(x = Category, y = `INTERNET USERS`) +
-  geom_boxplot()
 ```
 
 ## Objectives (optional)
