@@ -118,15 +118,11 @@ Include here a few sentences to introduce the problem and provide context. You m
 ## Correlation Between Total Population and Internet Users
 ```{r, echo=FALSE}
 source('scripts/population.R')
-```
 
-```{r}
 ggplot(data = internetusers_data[0:10,], aes(x = `Country`, y = `INTERNET USERS`)) +
   geom_bar(stat = "identity") +
   labs(title = "Internet Users of Top 10 Countries", y = "Internet Users", x = "Country")
-```
 
-```{r}
 ggplot(data = population_data[0:10,], aes(x = `Country`, y = `POPULATION`)) +
   geom_bar(stat = "identity") + 
   labs(title = "Populations of Top 10 Countries", y = "Population", x = "Country") +
@@ -138,22 +134,24 @@ ggplot(data = population_data[0:10,], aes(x = `Country`, y = `POPULATION`)) +
 source('scripts/gdp.R')
 ```
 
-
 ## Correlation Between Education and Internet Users
 ```{r, echo=FALSE}
 source('scripts/education.R')
 ```
 
-## Correlation Between Demooncracy and Internet Users
+## Correlation Between Democracy and Internet Users
 ```{r, echo=FALSE}
 source('scripts/democracy.R')
 
 democracy_internet_joint_graph
+
 ```
 
-```{r}
-ggplot(democracy_internet_joint) + aes(x = Category, y = `INTERNET USERS`) +
-  geom_boxplot()
+## Prediction of Density of Internet Users with Family Income Distributions
+```{r, echo=FALSE}
+source('scripts/IncomeDistribution.R')
+
+income_tree
 ```
 
 ## Objectives (optional)
