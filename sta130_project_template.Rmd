@@ -147,6 +147,8 @@ source('scripts/education.R')
 ## Correlation Between Demooncracy and Internet Users
 ```{r, echo=FALSE}
 source('scripts/democracy.R')
+
+democracy_internet_joint_graph
 ```
 
 ```{r}
