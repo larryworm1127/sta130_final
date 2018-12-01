@@ -150,9 +150,7 @@ source('scripts/democracy.R')
 ```
 
 ```{r}
-democracy_internet_joint <- democracy_data %>%
-  inner_join(internetusers_data, by = "Country") %>% 
-  ggplot + aes(x = Category, y = `INTERNET USERS`) +
+ggplot(democracy_internet_joint) + aes(x = Category, y = `INTERNET USERS`) +
   geom_boxplot()
 ```
 
