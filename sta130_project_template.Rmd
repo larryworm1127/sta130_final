@@ -152,8 +152,6 @@ democracy_internet_joint_graph
 ```
 
 ```{r}
-ggplot(democracy_internet_joint) + aes(x = Category, y = `INTERNET USERS`) +
-  geom_boxplot()
 ```
 
 ## Objectives (optional)
