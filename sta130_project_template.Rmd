@@ -1,11 +1,12 @@
 ---
 title: "Project title"
 author: "Team members names, tutorial section, and group number"
-subtitle: The subtitle of my project
 output:
+  beamer_presentation: default
   ioslides_presentation: default
   widescreen: yes
-editor_options: 
+subtitle: The subtitle of my project
+editor_options:
   chunk_output_type: console
 ---
 
@@ -138,14 +139,14 @@ internetusers_gdp_joint_graph
 
 ## Correlation Between Education and Internet Users
 ```{r, echo=FALSE}
-source('scripts/education.R')
+
 ```
 
 ## Correlation Between Democracy and Internet Users
 ```{r, echo=FALSE}
 source('scripts/democracy.R')
 
-democracy_internet_joint_graph
+democracy_tree
 
 ```
 
@@ -153,31 +154,56 @@ democracy_internet_joint_graph
 ```{r, echo=FALSE}
 source('scripts/IncomeDistribution.R')
 
-income_tree
+income_regression
+
 ```
 
 ## Objectives (optional)
 
 You can list the questions of interest in complete English sentences here to highlight them. 
 
+```{r}
+
+```
+
 ## Data Summary (optional)
 
 Here you can explain how you cleaned the data and created variables suitable for answering your questions. 
 You can also include graphical displays that either motivated or address the questions.
 
+```{r}
+
+```
+
+
 ## Statistical Methods
 
 Describe here what you have done to the data without presenting any results (output). If you want to indicate variables by symbols or variable names, define them here. 
 
+```{r}
+  ##
+```
+
+
 ## Results
 
 Present the main results here, in order of importance, related to the questions asked. You might use tables or graphs, or other ways to summarize your results.
+
+```{r}
+  ##
+```
+
 
 ## Conclusion
 
 Give your main conclusions here. Follow the order of questions you presented. 
 
 Here you can also mention any additional considerations, concerns, or issues you might have. For example, if the results were unexpected, you can discuss this and perhaps offer possible explanations.
+
+```{r}
+  ##
+```
+
 
 ## Acknowledgements (optional)
 
