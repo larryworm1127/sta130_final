@@ -132,6 +132,8 @@ ggplot(data = population_data[0:10,], aes(x = `Country`, y = `POPULATION`)) +
 ## Correlation Between GDP and Internet Users
 ```{r, echo=FALSE}
 source('scripts/gdp.R')
+
+internetusers_gdp_joint_graph
 ```
 
 ## Correlation Between Education and Internet Users
