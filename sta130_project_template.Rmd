@@ -116,6 +116,13 @@ gg
 Include here a few sentences to introduce the problem and provide context. You might want to briefly summarize the data in words (what is the data and what is it used for). You can present the questions you are investigating here. 
 
 
+## Correlation Between Total Population and Internet Users
+```{r, echo=FALSE}
+source('scripts/population.R')
+
+top_internetusers_plot
+```
+
 ## World Region
 ```{r}
 source('scripts/world_region.R')
@@ -124,12 +131,12 @@ region_total_internetuser_graph
 region_density_internetuser_graph
 ```
 
+## Health
+```{r}
+source('scripts/health.R')
 
-## Correlation Between Total Population and Internet Users
-```{r, echo=FALSE}
-source('scripts/population.R')
-
-top_internetusers_plot
+lifeexpect_internet_graph
+lifeexpect_internet_density_graph
 ```
 
 ## Correlation Between GDP and Internet Users
