@@ -120,7 +120,8 @@ Include here a few sentences to introduce the problem and provide context. You m
 ```{r}
 source('scripts/world_region.R')
 
-region_graph
+region_total_internetuser_graph
+region_density_internetuser_graph
 ```
 
 
