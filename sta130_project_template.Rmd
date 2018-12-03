@@ -120,14 +120,8 @@ Include here a few sentences to introduce the problem and provide context. You m
 ```{r, echo=FALSE}
 source('scripts/population.R')
 
-ggplot(data = internetusers_data[0:10,], aes(x = `Country`, y = `INTERNET USERS`)) +
-  geom_bar(stat = "identity") +
-  labs(title = "Internet Users of Top 10 Countries", y = "Internet Users", x = "Country")
-
-ggplot(data = population_data[0:10,], aes(x = `Country`, y = `POPULATION`)) +
-  geom_bar(stat = "identity") + 
-  labs(title = "Populations of Top 10 Countries", y = "Population", x = "Country") +
-  theme(plot.title = element_text(hjust = 0.5))
+top_internetusers_plot
+#top_population_plot
 ```
 
 ## Correlation Between GDP and Internet Users
