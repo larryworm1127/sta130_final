@@ -2,8 +2,8 @@
 title: "Project title"
 author: "Team members names, tutorial section, and group number"
 output:
-  beamer_presentation: default
   ioslides_presentation: default
+  beamer_presentation: default
   widescreen: yes
 subtitle: The subtitle of my project
 editor_options:
@@ -172,7 +172,7 @@ Here you can explain how you cleaned the data and created variables suitable for
 You can also include graphical displays that either motivated or address the questions.
 
 ```{r}
-
+  ## We are concerened with the relationship between the internet users and various factors such as gdp, education, and democracy. We joined the population table with the factors tables by country. This helps us compare the density of internet users in a country with each of the factors. 
 ```
 
 
