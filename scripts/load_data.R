@@ -18,4 +18,4 @@ education_data <- read_csv(paste0(path, "education_cia2017.csv"))
 healthexpend_data <- read_csv(paste0(path,"healthexpend_cia2017.csv"))
 incomedistribution_data <- get_CIAWFB_data("https://www.cia.gov/library/publications/resources/the-world-factbook/rankorder/2172rank.html")
 cellphoneusers_data <- get_CIAWFB_data("https://www.cia.gov/library/publications/resources/the-world-factbook/rankorder/2151rank.html")
-
+world_regions <- read_csv(paste0(path,"world_regions.csv"))

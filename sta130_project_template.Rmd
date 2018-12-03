@@ -115,12 +115,19 @@ gg
 
 Include here a few sentences to introduce the problem and provide context. You might want to briefly summarize the data in words (what is the data and what is it used for). You can present the questions you are investigating here. 
 
+## World Region
+```{r}
+source('scripts/world_region.R')
+
+region_total_internetuser_graph
+region_density_internetuser_graph
+```
+
 ## Correlation Between Total Population and Internet Users
 ```{r, echo=FALSE}
 source('scripts/population.R')
 
 top_internetusers_plot
-#top_population_plot
 ```
 
 ## Correlation Between GDP and Internet Users
@@ -129,6 +136,8 @@ source('scripts/gdp.R')
 
 internetusers_gdp_joint_graph
 ```
+
+This plot shows the positive relationship between GDP and Internet users in developing and developed countries.
 
 ## Correlation Between Education and Internet Users
 ```{r, echo=FALSE}
@@ -194,10 +203,12 @@ Present the main results here, in order of importance, related to the questions 
 
 
 ## Conclusion
+  For GDP:
+Developed countries (Countries have high GDP, e.g. Japan, Germany) have a larger number of internet users, and developing countries (Countries have low GDP, e.g. Ethiopia, Kenya) have a less number of internet users.
 
+Developing countries who are making effort to be a developed country (Countries have medium GDP, e.g. Brazil, Mexico ) have the large variation of internet users domestically. 
 Give your main conclusions here. Follow the order of questions you presented. 
 
-Here you can also mention any additional considerations, concerns, or issues you might have. For example, if the results were unexpected, you can discuss this and perhaps offer possible explanations.
 
 ```{r}
   ##
