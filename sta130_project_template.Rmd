@@ -147,15 +147,19 @@ lifeexpect_internet_graph
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 
 lifeexpect_internet_density_graph
-<<<<<<< HEAD
-
-=======
-lifeexpect_internet_density_graph_line
-summary(lifeexpect_internet_model)$coefficients
-summary(lifeexpect_internet_model)$r.squared
->>>>>>> added comments, added linear regression for health
 ```
 
+## Health
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+lifeexpect_internet_density_graph_line
+
+```
+
+## Health
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+summary(lifeexpect_internet_model)$coefficients
+summary(lifeexpect_internet_model)$r.squared
+```
 
 ## Correlation Between GDP and Internet Users
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -190,6 +194,7 @@ income_regression
 ## Linear Model
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 mod_summary$coefficients
+mod_summary$r.squared
 ```
 
 
