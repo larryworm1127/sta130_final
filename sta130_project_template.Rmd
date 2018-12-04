@@ -140,7 +140,6 @@ region_density_internetuser_graph
 source('scripts/health.R')
 
 lifeexpect_internet_graph
-
 ```
 
 ## Health
@@ -152,7 +151,6 @@ lifeexpect_internet_density_graph
 ## Health
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 lifeexpect_internet_density_graph_line
-
 ```
 
 ## Health
@@ -188,7 +186,6 @@ democracy_tree
 source('scripts/IncomeDistribution.R')
 
 income_regression
-
 ```
 
 ## Linear Model
