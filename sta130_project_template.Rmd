@@ -144,12 +144,6 @@ lifeexpect_internet_graph
 
 ## Health
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
-
-lifeexpect_internet_density_graph
-```
-
-## Health
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
 lifeexpect_internet_density_graph_line
 ```
 
@@ -169,8 +163,15 @@ internetusers_gdp_joint_graph
 This plot shows the positive relationship between GDP and Internet users in developing and developed countries.
 
 ## Correlation Between Education and Internet Users
-```{r, echo=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+source('scripts/education.R')
 
+education_internet_graph
+```
+
+## Education and Internet Users
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+education_internet_density_graph
 ```
 
 ## Correlation Between Democracy and Internet Users
@@ -178,7 +179,6 @@ This plot shows the positive relationship between GDP and Internet users in deve
 source('scripts/democracy.R')
 
 democracy_tree
-
 ```
 
 ## Prediction of Density of Internet Users with Family Income Distributions
