@@ -17,6 +17,7 @@ population_internet_join <- internetusers_data %>%
   select(Country, 'INTERNET USERS', POPULATION, Percentage) %>%
   mutate(Density = ifelse(Percentage < 1/3 , "low", ifelse(Percentage < 2/3 & Percentage > 1/3 , "medium", "high")))
 
+
 # Drawing plot
 top_internetusers_plot <- ggplot(data = population_internet_join[0:20,], aes(fill = `POPULATION`, x = `Country`, y = `INTERNET USERS`)) +
   geom_bar(stat = "identity", position = position_dodge(0.8)) +

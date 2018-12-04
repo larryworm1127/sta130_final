@@ -147,7 +147,13 @@ lifeexpect_internet_graph
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 
 lifeexpect_internet_density_graph
+<<<<<<< HEAD
 
+=======
+lifeexpect_internet_density_graph_line
+summary(lifeexpect_internet_model)$coefficients
+summary(lifeexpect_internet_model)$r.squared
+>>>>>>> added comments, added linear regression for health
 ```
 
 
