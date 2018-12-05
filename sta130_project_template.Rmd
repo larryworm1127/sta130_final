@@ -176,7 +176,6 @@ internetusers_gdp_density_graph
 ## Internet Users and Education
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/education.R')
-
 education_internet_graph
 ```
 
