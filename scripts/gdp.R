@@ -16,16 +16,25 @@ get_num_from_char <- function(data_vector) {
 }
 
 # Sanitize and wrangle data
-internetusers_gdp_joint <- inner_join (x = internetusers_data, y = gdpppp_data,by="Country") %>% 
+internetusers_gdp_joint <- population_internet_join %>% 
+  inner_join (gdpppp_data, by = "Country") %>% 
   filter(`INTERNET USERS` < 200000000) %>%
   mutate(GDP = get_num_from_char(`GDP - PER CAPITA (PPP)`)) %>%
   mutate(gdp_cat = ifelse(GDP > 40000, "5", 
                           ifelse(GDP <= 40000 & GDP > 21000, "4",
                                  ifelse(GDP <= 21000 & GDP > 11500, "3", 
-                                        ifelse(GDP <= 11500 & GDP > 3700, "2", "1")))))
+                                        ifelse(GDP <= 11500 & GDP > 3700, "2", "1"))))) %>%
+  select(Country, `INTERNET USERS`, POPULATION, Percentage, GDP, gdp_cat, Density)
 
 # Create data plots
-internetusers_gdp_joint_graph <- ggplot(internetusers_gdp_joint) + 
-  aes(x = gdp_cat, y =`INTERNET USERS`) + 
-  geom_boxplot()  
+internetusers_gdp_graph <- ggplot(internetusers_gdp_joint, aes(x = gdp_cat, y =`INTERNET USERS`)) + 
+  geom_boxplot() +
+  labs(title = "Distribution of Total Internet Users in Each GDP Category", x = "GDP Category", y = "Internet Users") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+internetusers_gdp_density_graph <- ggplot(internetusers_gdp_joint, aes(x = gdp_cat, y = Percentage)) +
+  geom_boxplot() +
+  labs(title = "Distribution of % Internet Users in Each GDP Category", x = "GDP Category", y = "% Population") +
+  theme(plot.title = element_text(hjust = 0.5))
+
   

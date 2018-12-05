@@ -20,7 +20,7 @@ lifeexpect_internet_graph <- ggplot(lifeexpect_internet_join, aes(x = `(YEARS)`,
 
 lifeexpect_internet_density_graph_line <- ggplot(lifeexpect_internet_density_join, aes(x = `(YEARS)`, y = `Percentage`)) +
   geom_point() + geom_smooth(method = "lm") +
-  labs(title = "Life Expectancy vs. % Internet Users of the Total Population", x = "Life Expectancy (Years)", y = "% Population") +
+  labs(title = "Life Expectancy vs. % Internet Users", x = "Life Expectancy (Years)", y = "% Population") +
   theme(plot.title = element_text(hjust = 0.5))
 
 

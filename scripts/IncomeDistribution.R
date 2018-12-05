@@ -11,9 +11,10 @@ income_internet_join <- incomedistribution_data %>%
 
 
 # Plot data
-income_regression <- income_internet_join %>%
-  ggplot() + aes(x = `Gini Index`, y = Percentage) +
-  geom_point() + geom_smooth(method = "lm")
+income_regression <- ggplot(income_internet_join, aes(x = `Gini Index`, y = Percentage)) +
+  geom_point() + geom_smooth(method = "lm") +
+  labs(title = "Family Income (Gini Index) vs. % Internet Users", x = "Gini Index", y = "% Population") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 
 # Plot regression model

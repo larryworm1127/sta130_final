@@ -1,11 +1,11 @@
 ---
 title: "STA130 Final Project"
 author: "Larry Shi, Anthony Wong, Yan Zhang, Michael Wang"
-tutorial session: "TUT 0206"
 output:
   ioslides_presentation: default
   beamer_presentation: default
   widescreen: yes
+subtitle: TUT 0206, and group number
 editor_options:
   chunk_output_type: console
 ---
@@ -161,10 +161,13 @@ summary(lifeexpect_internet_model)$r.squared
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/gdp.R')
 
-internetusers_gdp_joint_graph
+internetusers_gdp_graph
 ```
 
-This plot shows the positive relationship between GDP and Internet users in developing and developed countries.
+## GDP and Internet Users
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+internetusers_gdp_density_graph
+```
 
 ## Internet Users and Education
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}

@@ -21,7 +21,8 @@ population_internet_join <- internetusers_data %>%
 # Drawing plot
 top_internetusers_plot <- ggplot(data = population_internet_join[0:20,], aes(fill = `POPULATION`, x = `Country`, y = `INTERNET USERS`)) +
   geom_bar(stat = "identity", position = position_dodge(0.8)) +
-  labs(title = "Internet Users of Top 10 Countries", y = "Internet Users", x = "Country")
+  labs(title = "Internet Users of Top 10 Countries", y = "Internet Users", x = "Country") +
+  theme(plot.title = element_text(hjust = 0.5))
 
 
 # Cell phone users

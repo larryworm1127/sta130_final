@@ -18,12 +18,12 @@ internet_population_aggr_region_join <- inner_join(internet_aggr_region_data, po
 # Plot graph
 region_total_internetuser_graph <- ggplot(internet_aggr_region_data, aes(x = Category, y = x)) +
   geom_bar(stat = "identity") +
-  labs(title = "Total Internet Users vs. Region in the World", x = "Regions", y = "# of Internet Users") +
+  labs(title = "Total Internet Users vs. Region in the World", x = "Regions", y = "Internet Users") +
   theme(plot.title = element_text(hjust = 0.5))
 
 region_density_internetuser_graph <- ggplot(internet_population_aggr_region_join, aes(x = Category, y = density)) +
   geom_bar(stat = "identity") +
-  labs(title = "Density of Internet Users vs. Region in the World", x = "Regions", y = "% of Internet Users out of Total Population") +
+  labs(title = "% Internet Users vs. Region in the World", x = "Regions", y = "% Population") +
   theme(plot.title = element_text(hjust = 0.5))
 
 
