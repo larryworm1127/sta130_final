@@ -42,7 +42,6 @@ To make bullet points, start the points after a blank line:
 - point one
 - another point
 
-
 ---
 
 Include some R output
@@ -230,10 +229,16 @@ mod_summary$r.squared
 
 ## Conclusion
 
-  For GDP:
-Developed countries (Countries have high GDP, e.g. Japan, Germany) have a larger number of internet users, and developing countries (Countries have low GDP, e.g. Ethiopia, Kenya) have a less number of internet users.
+- Developed countries with higher GDP have a larger percentage of internet users, whereas underdeveloped countries with lower GDP have smaller percentage of internet users.
 
 Developing countries who are making effort to be a developed country (Countries have medium GDP, e.g. Brazil, Mexico ) have the large variation of internet users domestically. 
+
+- Political system 
+
+- There exists a negative correlation between percentage of internet users and family income. Since the coefficient of determination is low, the linear model doesn't fit well and thus the data is non-linear
+
+
+
 Give your main conclusions here. Follow the order of questions you presented. 
 
 ## Acknowledgements (optional)

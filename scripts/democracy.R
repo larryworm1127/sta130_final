@@ -18,6 +18,9 @@ democracy_fit <- rpart(Density ~ Category + PoliticalParticipationLevel, democra
 democracy_tree <- plot(as.party(democracy_fit), type = "simple", gp = gpar(cex = 0.8))
 
 
+
+
+
 # Plot graphs   
 democracy_internet_joint_graph <- ggplot(democracy_internet_joint) + 
   aes(x = Category, y = `INTERNET USERS`) +
