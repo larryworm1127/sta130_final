@@ -180,6 +180,12 @@ education_internet_graph
 education_internet_density_graph
 ```
 
+# Internet Users and Education
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+education_internet_fit$coefficient
+education_internet_fit$r.squared
+```
+
 ## Internet Users and Democracy
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/democracy.R')
