@@ -200,7 +200,7 @@ education_internet_graph
 education_internet_density_graph
 ```
 
-# Internet Users and Education
+## Internet Users and Education
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 education_internet_fit$coefficient
 education_internet_fit$r.squared
@@ -209,14 +209,23 @@ education_internet_fit$r.squared
 ## Internet Users and Democracy
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/democracy.R')
-
 democracy_tree
+```
+
+## Internet Users and Democracy
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+tree_plot <- plot(as.party(tree), type = "simple", gp = gpar(cex = 0.5))
+```
+
+## Internet Users and Democracy
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+confusion_matrix 
+accuracy
 ```
 
 ## Internet Users and Family Income Distributions
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/IncomeDistribution.R')
-
 income_regression
 ```
 
