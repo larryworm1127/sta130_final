@@ -7,8 +7,10 @@ library(partykit)
 income_internet_join <- incomedistribution_data %>%
   rename(`Gini Index` = `DISTRIBUTION OF FAMILY INCOME - GINI INDEX`) %>%
   inner_join(population_internet_join, by = "Country") %>%
-  filter(`Gini Index` > 20)
+  filter(`Gini Index` > 20) %>%
+  select(Country, `Gini Index`, `INTERNET USERS`, POPULATION, Percentage, Density)
 
+income_internet_join[3, 1] <- "Micronesia"
 
 # Plot data
 income_regression <- ggplot(income_internet_join, aes(x = `Gini Index`, y = Percentage)) +

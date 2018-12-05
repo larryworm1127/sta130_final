@@ -5,7 +5,7 @@ output:
   ioslides_presentation: default
   beamer_presentation: default
   widescreen: yes
-subtitle: TUT 0206, and group number
+subtitle: TUT 0206
 editor_options:
   chunk_output_type: console
 ---
@@ -122,14 +122,12 @@ What kind of factors are in play that create such a phenomenon? Here, we want to
 ## Internet Users and Total Population 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/population.R')
-
 top_internetusers_plot
 ```
 
 ## Internet Users and World Region
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/world_region.R')
-
 region_total_internetuser_graph
 ```
 
@@ -159,7 +157,6 @@ summary(lifeexpect_internet_model)$r.squared
 ## Internet Users and GDP
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/gdp.R')
-
 internetusers_gdp_graph
 ```
 
@@ -171,7 +168,6 @@ internetusers_gdp_density_graph
 ## Internet Users and Education
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/education.R')
-
 education_internet_graph
 ```
 
@@ -183,14 +179,17 @@ education_internet_density_graph
 ## Internet Users and Democracy
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/democracy.R')
-
 democracy_tree
 ```
 
 ## Internet Users and Family Income Distributions
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/IncomeDistribution.R')
+head(income_internet_join, 7)
+```
 
+## Internet Users and Family Income Distributions
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 income_regression
 ```
 
@@ -205,9 +204,6 @@ mod_summary$r.squared
 
 You can list the questions of interest in complete English sentences here to highlight them. 
 
-```{r}
-
-```
 
 ## Data Summary (optional)
 
