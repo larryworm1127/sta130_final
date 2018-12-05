@@ -125,6 +125,17 @@ gg
   5. Political System
   6. Family Income Distribution 
   
+## Statistical Methods
+
+From the initial analysis of the population data against internet user data, we realize that some countries with high number of internet users is due to its high total population, and this could affect how the results of the analysis with other variables. Therefore, we created a new variable named `Percentage`, which is equal to `INTERNET USERS` / `POPULATION`. This tells us the percentage of the population that uses internet, which is a lot more accurate than the total number of internet users. We also went in further and sort the `Percentage` into category of low, medium and high to allow us to create classification with ease.
+
+GDP data were also modified in order for us to analyse the data more easily. We decided to split the GDP into 5 categories numbered from 1 to 5: Above $40000, between \$40000 and \$21000, between \$21000 and \$11500, between \$11500 and \$3700, and below \$3700. In this case, 5 is above \$40000 and 1 is below \$3700.
+
+`Describe here what you have done to the data without presenting any results (output). If you want to indicate variables by symbols or variable names, define them here. `
+
+## Results
+
+`Present the main results here, in order of importance, related to the questions asked. You might use tables or graphs, or other ways to summarize your results.`
 
 ## Internet Users and Total Population 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -210,19 +221,6 @@ income_regression
 mod_summary$coefficients
 mod_summary$r.squared
 ```
-
-## Statistical Methods
-
-From the initial analysis of the population data against internet user data, we realize that some countries with high number of internet users is due to its high total population, and this could affect how the results of the analysis with other variables. Therefore, we created a new variable named `Percentage`, which is equal to `INTERNET USERS` / `POPULATION`. This tells us the percentage of the population that uses internet, which is a lot more accurate than the total number of internet users. We also went in further and sort the `Percentage` into category of low, medium and high to allow us to create classification with ease.
-
-GDP data were also modified in order for us to analyse the data more easily. We decided to split the GDP into 5 categories numbered from 1 to 5: Above $40000, between \$40000 and \$21000, between \$21000 and \$11500, between \$11500 and \$3700, and below \$3700. In this case, 5 is above \$40000 and 1 is below \$3700.
-
-`Describe here what you have done to the data without presenting any results (output). If you want to indicate variables by symbols or variable names, define them here. `
-
-## Results
-
-`Present the main results here, in order of importance, related to the questions asked. You might use tables or graphs, or other ways to summarize your results.`
-
 
 ## Conclusion
 
