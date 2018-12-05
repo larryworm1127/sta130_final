@@ -10,64 +10,6 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-# echo=FALSE will stop the code chunk from appearing in the knit document
-# warning=FALSE and message=FALSE will stop R messages from appearing in the knit document
-library(tidyverse)
-```
-
-# A Section Heading on its own page
-
-## A heading that starts on a new page
-
-This document shows a few basics on making slides with R markdown.
-
-To produce the slides, Knit to HMTL (ioslides).
-
-(You can also knit to PDF if you have LaTeX installed on your computer.)
-
-
----
-
-Three dashes starts a new page when it is not started by a new header.
-
----
-
-### This is a heading that doesn't start a new page
-
-You can make text **bold** or in *italics*.
-
-To make bullet points, start the points after a blank line:
- 
-- point one
-- another point
-
----
-
-Include some R output
-
-```{r}
-ggplot(cars, aes(x=speed, y=dist)) + geom_point()
-```
-
----
-
-Include the output without showing the code and R messages (which is what you want for your poster presentation).  This R code chunk also changes the size of the plot.
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=3}
-ggplot(cars, aes(x=speed, y=dist)) + geom_point()
-```
-
-This plot shows that there is a positive relationship between distance and speed.
-
-## Read more
-
-There is more information on R markdown on the course website at [https://ntaback.github.io/UofT_STA130/Rmarkdownforclassreports.html](https://ntaback.github.io/UofT_STA130/Rmarkdownforclassreports.html)
-
-For more on creating an `ioslides` presentation see [https://rmarkdown.rstudio.com/ioslides_presentation_format.html](https://rmarkdown.rstudio.com/ioslides_presentation_format.html)
-
-# Internet Users in the World
-
 ## Introduction
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -143,7 +85,7 @@ top_internetusers_plot
 ```
 
 ## Internet Users and Population
-```{r}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 top_internetusers_density_plot
 ```
 
@@ -172,8 +114,15 @@ lifeexpect_internet_density_graph
 ```
 
 ## Internet Users and Health
+Let $H_0$ be $\beta_1 = 0$ and $H_a$ be $\beta_1 \neq 0$
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 summary(lifeexpect_internet_model)$coefficients
+```
+
+Small p-value indicates strong evidence against the null hypothesis.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 summary(lifeexpect_internet_model)$r.squared
 ```
 
@@ -201,6 +150,9 @@ education_internet_density_graph
 ```
 
 ## Internet Users and Education
+
+Let $H_0$ be $\beta_1 = 0$ and $H_a$ be $\beta_1 \neq 0$
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 education_internet_fit$coefficient
 education_internet_fit$r.squared
@@ -248,9 +200,4 @@ Developing countries who are making effort to be a developed country (Countries 
 
 
 Give your main conclusions here. Follow the order of questions you presented. 
-
-## Acknowledgements (optional)
-
-If you received any help from someone other than your team members you can acknowledge them. For example:   
-*The authors thank Wei for providing information on additional data resources. The authors would like to thank "TA name" for helpful suggestions and comments that improved the presentation of this poster.*
 
