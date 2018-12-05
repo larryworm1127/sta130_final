@@ -126,14 +126,13 @@ gg
   
 ## Statistical Methods
 
-From the initial analysis of the population data against internet user data, we found that
-- Total population of a country doesn't really reflect the correlation between the two variables: China and India has much higher population than the other countries which results in higher total number of internet users.
-- Created a new variable, `Percentage` = `INTERNET USERS` / `POPULATION`, reflects the percentage of the population that uses internet
-- Split`Percentage` into category of low, medium and high to allow us to create classification with ease.
-- Split the GDP into 5 categories numbered from 1 to 5: Above $40000, between \$40000 and \$21000, between \$21000 and \$11500, between \$11500 and \$3700, and below \$3700. In this case, 5 is above \$40000 and 1 is below \$3700.
+From the initial analysis of the population data against internet user data, we found that:
 
-`Describe here what you have done to the data without presenting any results (output). If you want to indicate variables by symbols or variable names, define them here. `
-
+  - Total population of a country doesn't really reflect the correlation between the two variables.
+  - Created a new variable, `Percentage` = `INTERNET USERS` / `POPULATION`, reflects the percentage of the population that uses internet
+  - Split `Percentage` into category of low, medium and high to allow us to classify internet users in terms of density.
+  - Split the GDP into 5 categories: Above $40000, between \$40000 and \$21000, between \$21000 and \$11500, between \$11500 and \$3700, and below \$3700.
+  
 # Results
 
 ## Internet Users and Population 
