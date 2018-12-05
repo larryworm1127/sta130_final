@@ -1,6 +1,6 @@
 ---
 title: "STA130 Final Project"
-author: "Larry Shi, Anthony Wong, Yan Zhang, Michael Wang"
+author: "Larry Shi, Anthony Wong, Yan Zhang, Mike Wang"
 output:
   ioslides_presentation: default
   beamer_presentation: default
