@@ -114,10 +114,17 @@ gg
 
 --- 
 
-Include here a few sentences to introduce the problem and provide context. You might want to briefly summarize the data in words (what is the data and what is it used for). You can present the questions you are investigating here. 
+- According to the map above, there is a huge difference in the distribution of internet users around the world. 
+- What kind of factors are in play that create such a phenomenon? 
+- Analyze the correlation between Internet users and 
 
-According to the map above, there is a huge difference in the distribution of internet users around the world. 
-What kind of factors are in play that create such a phenomenon? Here, we want to look at the total population of the countries, and see whether other factors like GDP, education, government, family income, and health have an impact on the density of internet users.
+  1. Population
+  2. World Region
+  3. Goverment's Expenditure on Health & Education 
+  4. Economy & GDP
+  5. Political System
+  6. Family Income Distribution 
+  
 
 ## Internet Users and Total Population 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -139,7 +146,6 @@ region_density_internetuser_graph
 ## Internet Users and Health
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/health.R')
-
 lifeexpect_internet_graph
 ```
 
@@ -176,7 +182,7 @@ education_internet_graph
 education_internet_density_graph
 ```
 
-# Internet Users and Education
+## Internet Users and Education
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 education_internet_fit$coefficient
 education_internet_fit$r.squared
@@ -205,19 +211,6 @@ mod_summary$coefficients
 mod_summary$r.squared
 ```
 
-
-## Objectives (optional)
-
-You can list the questions of interest in complete English sentences here to highlight them. 
-
-
-## Data Summary (optional)
-
-Here you can explain how you cleaned the data and created variables suitable for answering your questions. 
-You can also include graphical displays that either motivated or address the questions.
-
-We are concerened with the relationship between the internet users and various factors such as gdp, education, and democracy. We joined the population table with the factors tables by country. This helps us compare the density of internet users in a country with each of the factors. 
-
 ## Statistical Methods
 
 From the initial analysis of the population data against internet user data, we realize that some countries with high number of internet users is due to its high total population, and this could affect how the results of the analysis with other variables. Therefore, we created a new variable named `Percentage`, which is equal to `INTERNET USERS` / `POPULATION`. This tells us the percentage of the population that uses internet, which is a lot more accurate than the total number of internet users. We also went in further and sort the `Percentage` into category of low, medium and high to allow us to create classification with ease.
@@ -230,6 +223,7 @@ GDP data were also modified in order for us to analyse the data more easily. We 
 
 `Present the main results here, in order of importance, related to the questions asked. You might use tables or graphs, or other ways to summarize your results.`
 
+
 ## Conclusion
 
   For GDP:
@@ -238,10 +232,7 @@ Developed countries (Countries have high GDP, e.g. Japan, Germany) have a larger
 Developing countries who are making effort to be a developed country (Countries have medium GDP, e.g. Brazil, Mexico ) have the large variation of internet users domestically. 
 Give your main conclusions here. Follow the order of questions you presented. 
 
-## Acknowledgements (optional)
 
-If you received any help from someone other than your team members you can acknowledge them. For example:   
-*The authors thank Wei for providing information on additional data resources. The authors would like to thank "TA name" for helpful suggestions and comments that improved the presentation of this poster.*
 
 
 
