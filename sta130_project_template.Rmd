@@ -1,15 +1,14 @@
 ---
-title: "Project title"
-author: "Larry Shi, Anthony Wong, Yan Zhang, Michael Wang, TUT 0206, and group number"
+title: "STA130 Final Project"
+author: "Larry Shi, Anthony Wong, Yan Zhang, Michael Wang"
+tutorial session: "TUT 0206"
 output:
   ioslides_presentation: default
   beamer_presentation: default
   widescreen: yes
-subtitle: The subtitle of my project
 editor_options:
   chunk_output_type: console
 ---
-
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # echo=FALSE will stop the code chunk from appearing in the knit document
@@ -68,7 +67,7 @@ There is more information on R markdown on the course website at [https://ntabac
 
 For more on creating an `ioslides` presentation see [https://rmarkdown.rstudio.com/ioslides_presentation_format.html](https://rmarkdown.rstudio.com/ioslides_presentation_format.html)
 
-# Headings you should include in your project
+# Internet Users in the World
 
 ## Introduction
 
@@ -113,9 +112,14 @@ gg <- gg + scale_fill_continuous(low = 'thistle2', high = 'darkblue',
 gg
 ```
 
+--- 
+
 Include here a few sentences to introduce the problem and provide context. You might want to briefly summarize the data in words (what is the data and what is it used for). You can present the questions you are investigating here. 
 
-## Correlation Between Total Population and Internet Users
+According to the map above, there is a huge difference in the distribution of internet users around the world. 
+What kind of factors are in play that create such a phenomenon? Here, we want to look at the total population of the countries, and see whether other factors like GDP, education, government, family income, and health have an impact on the density of internet users.
+
+## internet Users and Total Population 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/population.R')
 
@@ -153,7 +157,7 @@ summary(lifeexpect_internet_model)$coefficients
 summary(lifeexpect_internet_model)$r.squared
 ```
 
-## Correlation Between GDP and Internet Users
+## Internet Users and GDP
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/gdp.R')
 
@@ -162,33 +166,33 @@ internetusers_gdp_joint_graph
 
 This plot shows the positive relationship between GDP and Internet users in developing and developed countries.
 
-## Correlation Between Education and Internet Users
+## Internet Users and Education
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/education.R')
 
 education_internet_graph
 ```
 
-## Education and Internet Users
+## Internet Users and Education
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 education_internet_density_graph
 ```
 
-## Correlation Between Democracy and Internet Users
+## Internet Users and Democracy
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/democracy.R')
 
 democracy_tree
 ```
 
-## Prediction of Density of Internet Users with Family Income Distributions
+## Internet Users and Family Income Distributions
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/IncomeDistribution.R')
 
 income_regression
 ```
 
-## Linear Model
+## Internet Users and Family Income Distributions
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 mod_summary$coefficients
 mod_summary$r.squared
@@ -217,32 +221,17 @@ You can also include graphical displays that either motivated or address the que
 
 Describe here what you have done to the data without presenting any results (output). If you want to indicate variables by symbols or variable names, define them here. 
 
-```{r}
-  ##
-```
-
-
 ## Results
 
 Present the main results here, in order of importance, related to the questions asked. You might use tables or graphs, or other ways to summarize your results.
 
-```{r}
-  ##
-```
-
-
 ## Conclusion
+
   For GDP:
 Developed countries (Countries have high GDP, e.g. Japan, Germany) have a larger number of internet users, and developing countries (Countries have low GDP, e.g. Ethiopia, Kenya) have a less number of internet users.
 
 Developing countries who are making effort to be a developed country (Countries have medium GDP, e.g. Brazil, Mexico ) have the large variation of internet users domestically. 
 Give your main conclusions here. Follow the order of questions you presented. 
-
-
-```{r}
-  ##
-```
-
 
 ## Acknowledgements (optional)
 
