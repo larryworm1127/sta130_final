@@ -137,10 +137,15 @@ GDP data were also modified in order for us to analyse the data more easily. We 
 
 `Present the main results here, in order of importance, related to the questions asked. You might use tables or graphs, or other ways to summarize your results.`
 
-## Internet Users and Total Population 
+## Internet Users and Population 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/population.R')
 top_internetusers_plot
+```
+
+## Internet Users and Population
+```{r}
+top_internetusers_density_plot
 ```
 
 ## Internet Users and World Region
