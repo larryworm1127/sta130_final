@@ -119,39 +119,38 @@ Include here a few sentences to introduce the problem and provide context. You m
 According to the map above, there is a huge difference in the distribution of internet users around the world. 
 What kind of factors are in play that create such a phenomenon? Here, we want to look at the total population of the countries, and see whether other factors like GDP, education, government, family income, and health have an impact on the density of internet users.
 
-## internet Users and Total Population 
+## Internet Users and Total Population 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/population.R')
 
 top_internetusers_plot
 ```
 
-## World Region
+## Internet Users and World Region
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/world_region.R')
 
 region_total_internetuser_graph
-
 ```
 
-## World Region
+## Internet Users and World Region
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 region_density_internetuser_graph
 ```
 
-## Health
+## Internet Users and Health
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/health.R')
 
 lifeexpect_internet_graph
 ```
 
-## Health
+## Internet Users and Health
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
-lifeexpect_internet_density_graph_line
+lifeexpect_internet_density_graph
 ```
 
-## Health
+## Internet Users and Health
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 summary(lifeexpect_internet_model)$coefficients
 summary(lifeexpect_internet_model)$r.squared
@@ -164,7 +163,7 @@ source('scripts/gdp.R')
 internetusers_gdp_graph
 ```
 
-## GDP and Internet Users
+## Internet Users and GDP
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 internetusers_gdp_density_graph
 ```
@@ -215,18 +214,19 @@ You can list the questions of interest in complete English sentences here to hig
 Here you can explain how you cleaned the data and created variables suitable for answering your questions. 
 You can also include graphical displays that either motivated or address the questions.
 
-```{r}
-  ## We are concerened with the relationship between the internet users and various factors such as gdp, education, and democracy. We joined the population table with the factors tables by country. This helps us compare the density of internet users in a country with each of the factors. 
-```
-
+We are concerened with the relationship between the internet users and various factors such as gdp, education, and democracy. We joined the population table with the factors tables by country. This helps us compare the density of internet users in a country with each of the factors. 
 
 ## Statistical Methods
 
-Describe here what you have done to the data without presenting any results (output). If you want to indicate variables by symbols or variable names, define them here. 
+From the initial analysis of the population data against internet user data, we realize that some countries with high number of internet users is due to its high total population, and this could affect how the results of the analysis with other variables. Therefore, we created a new variable named `Percentage`, which is equal to `INTERNET USERS` / `POPULATION`. This tells us the percentage of the population that uses internet, which is a lot more accurate than the total number of internet users. We also went in further and sort the `Percentage` into category of low, medium and high to allow us to create classification with ease.
+
+GDP data were also modified in order for us to analyse the data more easily. We decided to split the GDP into 5 categories numbered from 1 to 5: Above $40000, between \$40000 and \$21000, between \$21000 and \$11500, between \$11500 and \$3700, and below \$3700. In this case, 5 is above \$40000 and 1 is below \$3700.
+
+`Describe here what you have done to the data without presenting any results (output). If you want to indicate variables by symbols or variable names, define them here. `
 
 ## Results
 
-Present the main results here, in order of importance, related to the questions asked. You might use tables or graphs, or other ways to summarize your results.
+`Present the main results here, in order of importance, related to the questions asked. You might use tables or graphs, or other ways to summarize your results.`
 
 ## Conclusion
 
