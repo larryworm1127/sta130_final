@@ -19,5 +19,4 @@ education_internet_density_graph <- ggplot(education_internet_join, aes(x = `(% 
   labs(title = "% of GDP on Education vs. % Internet Users", x = "% of GDP on Education", y = "% Population") +
   theme(plot.title = element_text(hjust = 0.5))
 
-
-
+education_internet_fit <- summary(lm(`Percentage` ~ `(% OF GDP)`, data = education_internet_join))
