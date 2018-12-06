@@ -62,7 +62,7 @@ gg
   1. Population
   2. World Region
   3. Life Expectancy (Health)
-  4.  Economy & GDP
+  4. Economy & GDP
   5. Goverment's Expenditure on Education
   6. Political System
   7. Family Income Distribution 
