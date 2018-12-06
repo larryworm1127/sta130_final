@@ -16,7 +16,6 @@ dc_joint <- democracy_internet_joint
 
 # Create classficiation tree
 democracy_fit <- rpart(Density ~ Category + PoliticalParticipationLevel, democracy_internet_joint)
-democracy_tree <- plot(as.party(democracy_fit), type = "simple", gp = gpar(cex = 0.8))
 
 # Testing and Training Set
 set.seed(364)

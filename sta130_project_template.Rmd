@@ -61,10 +61,11 @@ gg
 
   1. Population
   2. World Region
-  3. Goverment's Expenditure on Health & Education 
-  4. Economy & GDP
-  5. Political System
-  6. Family Income Distribution 
+  3. Life Expectancy (Health)
+  4.  Economy & GDP
+  5. Goverment's Expenditure on Education
+  6. Political System
+  7. Family Income Distribution 
   
 ## Statistical Methods
 
@@ -114,14 +115,16 @@ lifeexpect_internet_density_graph
 ```
 
 ## Internet Users and Health
-Let $H_0$ be $\beta_1 = 0$ and $H_a$ be $\beta_1 \neq 0$
 
+Let $H_0$ be $\beta_1 = 0$ and $H_a$ be $\beta_1 \neq 0$
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 summary(lifeexpect_internet_model)$coefficients
 ```
+<font size="5">Small p-value indicates strong evidence against the null hypothesis.</font>
 
-Small p-value indicates strong evidence against the null hypothesis.
+<hr>
 
+<font size="5">R squared value is rather higher indicating that the model is a good fit.</font>
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 summary(lifeexpect_internet_model)$r.squared
 ```
@@ -152,21 +155,29 @@ education_internet_density_graph
 ## Internet Users and Education
 
 Let $H_0$ be $\beta_1 = 0$ and $H_a$ be $\beta_1 \neq 0$
-
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 education_internet_fit$coefficient
+```
+<font size="5">Large p-value indicates no evidence against the null hypothesis.</font>
+
+<hr>
+
+<font size="5">Really smaller R squared value indicating that the model is a bad fit.</font>
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 education_internet_fit$r.squared
 ```
 
 ## Internet Users and Democracy
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source('scripts/democracy.R')
-democracy_tree
+
+plot(as.party(democracy_fit), type = "simple", gp = gpar(cex = 0.8))
 ```
 
 ## Internet Users and Democracy
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
-tree_plot <- plot(as.party(tree), type = "simple", gp = gpar(cex = 0.5))
+plot(as.party(tree), type = "simple", gp = gpar(cex = 0.5))
 ```
 
 ## Internet Users and Democracy
@@ -182,12 +193,21 @@ income_regression
 ```
 
 ## Internet Users and Family Income Distributions
+
+Let $H_0$ be $\beta_1 = 0$ and $H_a$ be $\beta_1 \neq 0$
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 mod_summary$coefficients
+```
+<font size="5">Very small p-value indicates that there is strong evidence against the null hypothesis.</font>
+
+<hr>
+
+<font size="5">Small R squared value indicates that the model is a bad fit.</font>
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 mod_summary$r.squared
 ```
 
-## Conclusion (Population and World Region)
+## Conclusion (Population and Regions)
 
 - <font size="4">The number of internet users seems to increase as the population increase.</font>
 - <font size="4">However, some countries have significantly higher population than others causing inaccurate result.</font>
