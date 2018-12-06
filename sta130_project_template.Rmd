@@ -189,15 +189,18 @@ mod_summary$r.squared
 
 ## Conclusion
 
+
+
+---
+
 - Developed countries with higher GDP have a larger percentage of internet users, whereas underdeveloped countries with lower GDP have smaller percentage of internet users.
 
 Developing countries who are making effort to be a developed country (Countries have medium GDP, e.g. Brazil, Mexico ) have the large variation of internet users domestically. 
 
+---
+
 - Political system 
 
-- There exists a negative correlation between percentage of internet users and family income. Since the coefficient of determination is low, the linear model doesn't fit well and thus the data is non-linear
+- There exists a negative correlation between percentage of internet users and family income. Since the coefficient of determination is small, the linear model is a poor fit and the data is not linear. 
 
-
-
-Give your main conclusions here. Follow the order of questions you presented. 
 
