@@ -2,10 +2,10 @@
 title: "STA130 Final Project"
 author: "Larry Shi, Anthony Wong, Yan Zhang, Mike Wang"
 output:
-  ioslides_presentation:
+  ioslides_presentation: default
   beamer_presentation: default
   widescreen: yes
-subtitle: TUT 0206
+subtitle: Group 0206R2
 editor_options:
   chunk_output_type: console
 ---
@@ -176,13 +176,19 @@ plot(as.party(democracy_fit), type = "simple", gp = gpar(cex = 0.8))
 
 ## Internet Users and Democracy
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.height=6}
 plot(as.party(tree), type = "simple", gp = gpar(cex = 0.5))
 ```
 
 ## Internet Users and Democracy
+
+<font size="6">Confusion Matrix</font>
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
-confusion_matrix 
+confusion_matrix
+```
+
+<font size="6">Accuracy</font>
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 accuracy
 ```
 
@@ -235,10 +241,13 @@ mod_summary$r.squared
 - <font size="4">Some developing countries that are making an effort to be a developed country (Countries have medium GDP, e.g. Brazil, Mexico ) have the large variation of internet users domestically. </font>
 
 
-## Conclusion (Political System and Family Income)
+## Conclusion (Education, Political System and Family Income)
+
+- <font size="4">Both total number of internet users and % internet users shows no correlation between % GDP spent on education and internet users.</font>
+
+<hr>
 
 - <font size="4">Countries that are open to democracy (i.e. full/flawed democracy) tend to have greater % of internet users, while countries with more restricted government (i.e. authoritarian & Hybrid) tend to have lower % of internet users.</font>
-
 - <font size="4">However, the accuracy of the classification tree explained by the confusion matrix shows that the training set doesn't fit well on the testing set.</font>
 
 <hr>
