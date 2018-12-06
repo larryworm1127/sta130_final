@@ -237,4 +237,10 @@ mod_summary$r.squared
 
 ## Conclusion (Political System and Family Income)
 
-- There exists a negative correlation between percentage of internet users and family income. Since the coefficient of determination is low, the linear model doesn't fit well and thus the data is non-linear
+- <font size="4">Countries that are open to democracy (i.e. full/flawed democracy) tend to have greater % of internet users, while countries with more restricted government (i.e. authoritarian & Hybrid) tend to have lower % of internet users.</font>
+
+- <font size="4">However, the accuracy of the classification tree explained by the confusion matrix shows that the training set doesn't fit well on the testing set.</font>
+
+<hr>
+
+- <font size="4">There exists a negative correlation between percentage of internet users and family income. Since the coefficient of determination is low, the linear model doesn't fit well and thus the data is non-linear. </font>
