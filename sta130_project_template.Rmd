@@ -202,16 +202,16 @@ mod_summary$r.squared
 
 ## Conclusion (Life Expectancy and GDP)
 
-- <font size="4">Initialial analysis showed that there is no correlation between life expectancy/GDP per person and the number of internet users.</font>
-- <font size="4">Using % internet users, the plot shows a strong positive correlation between life expectancy and % internet users.</font>
+- <font size="4">Initialial analysis showed that there is no correlation between life expectancy/GDP and the number of internet users.</font>
+- <font size="4">Using % internet users, the plot shows a strong positive correlation between life expectancy/GDP and % internet users.</font>
 
 <hr>
 
-- <font size="4">Developed countries usually have better health care system resulting in higher life expectancy/GDP per person, and according to the world region analysis, this further shows that developed countries tends to have higher internet usage.</font>
+- <font size="4">Developed countries usually have better health care system resulting in higher life expectancy/GDP, and according to the world region analysis, this further shows that developed countries tends to have higher internet usage.</font>
 
 <hr>
 
-- <font size="4">Developed countries tends to have higher GDP per person which also result in higher % internet users, whereas developing countries with lower GDP per person have smaller % internet users.</font>
+- <font size="4">Developed countries tends to have higher GDP which also result in higher % internet users, whereas developing countries with lower GDP have smaller % internet users.</font>
 - <font size="4">Some developing countries that are making an effort to be a developed country (Countries have medium GDP, e.g. Brazil, Mexico ) have the large variation of internet users domestically. </font>
 
 
