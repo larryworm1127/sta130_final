@@ -2,7 +2,7 @@
 title: "STA130 Final Project"
 author: "Larry Shi, Anthony Wong, Yan Zhang, Mike Wang"
 output:
-  ioslides_presentation: default
+  ioslides_presentation:
   beamer_presentation: default
   widescreen: yes
 subtitle: TUT 0206
@@ -187,20 +187,34 @@ mod_summary$coefficients
 mod_summary$r.squared
 ```
 
-## Conclusion
+## Conclusion (Population and World Region)
+
+- <font size="4">The number of internet users seems to increase as the population increase.</font>
+- <font size="4">However, some countries have significantly higher population than others causing inaccurate result.</font>
+- <font size="4">% internet users is used instead showing there are not "real" correlation between population and internet users.</font>
+
+<hr>
+
+- <font size="4">Asia & Pacific region appeared to have most internet users due to its high total population.</font>
+- <font size="4">A different graph plotted using % internet users shows that North America and Europe have much internet usage.</font>
+- <font size="4">Both North America and Europe are mostly consistent with developed countries, while Asia, Africa and South America have many developing countries.</font>
 
 
+## Conclusion (Life Expectancy and GDP)
 
----
+- <font size="4">Initialial analysis showed that there is no correlation between life expectancy/GDP per person and the number of internet users.</font>
+- <font size="4">Using % internet users, the plot shows a strong positive correlation between life expectancy and % internet users.</font>
 
-- Developed countries with higher GDP have a larger percentage of internet users, whereas underdeveloped countries with lower GDP have smaller percentage of internet users.
+<hr>
 
-Developing countries who are making effort to be a developed country (Countries have medium GDP, e.g. Brazil, Mexico ) have the large variation of internet users domestically. 
+- <font size="4">Developed countries usually have better health care system resulting in higher life expectancy/GDP per person, and according to the world region analysis, this further shows that developed countries tends to have higher internet usage.</font>
 
----
+<hr>
 
-- Political system 
+- <font size="4">Developed countries tends to have higher GDP per person which also result in higher % internet users, whereas developing countries with lower GDP per person have smaller % internet users.</font>
+- <font size="4">Some developing countries that are making an effort to be a developed country (Countries have medium GDP, e.g. Brazil, Mexico ) have the large variation of internet users domestically. </font>
 
-- There exists a negative correlation between percentage of internet users and family income. Since the coefficient of determination is small, the linear model is a poor fit and the data is not linear. 
 
+## Conclusion (Political System and Family Income)
 
+- There exists a negative correlation between percentage of internet users and family income. Since the coefficient of determination is low, the linear model doesn't fit well and thus the data is non-linear

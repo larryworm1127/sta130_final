@@ -19,12 +19,12 @@ population_internet_join <- internetusers_data %>%
 
 
 # Drawing plot
-top_internetusers_plot <- ggplot(data = population_internet_join[0:10,], aes(x = `Country`, y = `INTERNET USERS`)) +
+top_internetusers_plot <- ggplot(data = population_internet_join[0:10,], aes(x = `Country`, y = `INTERNET USERS`, fill = `POPULATION`)) +
   geom_bar(stat = "identity", position = position_dodge(0.8)) +
   labs(title = "Internet Users of Top 10 Countries", y = "Internet Users", x = "Country") +
   theme(plot.title = element_text(hjust = 0.5))
 
-top_internetusers_density_plot <- ggplot(data = population_internet_join[0:10,], aes(x = `Country`, y = `Percentage`)) +
+top_internetusers_density_plot <- ggplot(data = population_internet_join[0:10,], aes(x = `Country`, y = `Percentage`, fill = `POPULATION`)) +
   geom_bar(stat = "identity", position = position_dodge(0.8)) +
   labs(title = "% Internet Users of Top 10 Countries", y = "% Population", x = "Country") +
   theme(plot.title = element_text(hjust = 0.5))
