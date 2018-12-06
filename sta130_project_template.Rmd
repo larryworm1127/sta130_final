@@ -176,7 +176,7 @@ plot(as.party(democracy_fit), type = "simple", gp = gpar(cex = 0.8))
 
 ## Internet Users and Democracy
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.height=6}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=8, fig.height=5}
 plot(as.party(tree), type = "simple", gp = gpar(cex = 0.5))
 ```
 
